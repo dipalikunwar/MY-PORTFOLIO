@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dipali Kunwar Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="container nav-container">
+<div class="logo"> <h3>--------DIPALI KUNWAR-------</h3> </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#cv">CV</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header / Home Section -->
+    <header id="home">
+        <div class="container header-container">
+            <div class="intro">
+
+                <h1>Dipali Kunwar</h1>
+                <p>Software Engineer in the Making</p>
+                <a href="#contact" class="btn">Contact Me</a>
+            </div>
+            <div class="photo">
+                <img src="myImg.png" alt="Dipali Kunwar">
+            </div>
+        </div>
+    </header>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>
+                I am a passionate problem solver and coder with experience in web development, Android development, and data-driven projects. I love creating impactful solutions and learning new technologies.
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li>Java</li>
+                <li>DSA</li>
+                <li>Kotlin</li>
+                <li>HTML & CSS</li>
+                <li>JavaScript</li>
+                <li>React Js</li>
+                <li>Node Js</li>
+                <li>Android Development</li>
+                <li>ML Kit / AI Integration</li>
+                <li>Selenium / Testing</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+<section id="projects">
+    <div class="container">
+        <h2>Projects</h2>
+
+        <div class="project">
+            <h3>Neatfy (API Project)</h3>
+            <p>A project using APIs to fetch and display data dynamically, integrating real-time functionalities.</p>
+            <p><strong>Tech:</strong> HTML, CSS, Java, API Integration</p>
+            <img src="NeatifyImg.png" height="400" alt="Neatfy Project">
+        </div>
+
+        <div class="project">
+            <h3>WasteWise</h3>
+            <p>An interactive platform to report, schedule, and track waste collection efficiently in local areas.</p>
+            <p><strong>Tech:</strong> HTML, CSS, Java, API Integration</p>
+            <img src="WasteWise.png" alt="WasteWise Project">
+        </div>
+
+        <div class="project">
+            <h3>LocalFinder</h3>
+            <p>An Android application to locate and display local businesses with details fetched via APIs.</p>
+            <p><strong>Tech:</strong> Kotlin, Android Studio, API Integration</p>
+            <img src="LocalFinderImg.png" height="400"  alt="LocalFinder Project">
+        </div>
+
+    </div>
+</section>
+
+
+    <!-- CV / Resume Section -->
+    <section id="cv">
+        <div class="container">
+            <h2>Resume</h2>
+            <p><strong>Education:</strong> BTech in Computer Science Engineering (CSE) - LPU</p>
+            <p><strong>Certifications:</strong> C++ with OOPs & DSA, Functional Testing with Selenium</p>
+            <p><strong>Achievements:</strong> Completed LeetCode Arrays questions, Participated in Imagine Cup 2025</p>
+            <a href="CVDipali.docx" target="_blank" class="btn">Download CV</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Email: dipali.kunwar@example.com</p>
+            <p>GitHub: <a href="https://github.com/dipalikunwar">github.com/dipalikunwar</a></p>
+            <p>LinkedIn: <a href="www.linkedin.com/in/dipali-kunwar">linkedin.com/in/dipali-kunwar</a></p>
+            <p>LeetCode: <a href="https://leetcode.com/u/dipali_1221/">linkedin.com/u/dipali_1221/</a></p>
+        </div>
+        <form id="contactForm">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit" class="btn">Send</button>
+</form>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Dipali Kunwar</p>
+    </footer>
+
+    <!-- Smooth Scroll JS -->
+    <script>
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
